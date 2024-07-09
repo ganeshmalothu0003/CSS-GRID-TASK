@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            min-height: calc(100vh - 150px);
+            background-color: rgb(28, 28, 82);
+            display: grid;
+            grid-template-columns:repeat(4,1fr); 
+            gap: 10px;
+            padding: 50px 300px 50px 300px;
+        }
+        .container>div {
+            font-size: 30px;
+            text-align: center;
+        }
+        .item1{
+            background-color: rgb(27, 210, 27);
+            grid-row: 1/4;
+        }
+        .item2{
+            background-color:rgb(27, 210, 27);
+            grid-column: 2/4;
+        }
+        .item3{
+            background-color: red;
+        }
+        .item4{
+            background-color: rgb(245, 199, 48);
+        }
+        .item5{
+            background-color: red;
+        }
+        .item6{
+            background-color: rgb(27, 210, 27);
+            grid-column:4/4;
+            grid-row: 2/4;
+        }
+        .item7{
+            background-color: red;
+        }
+        .item8{
+            background-color: rgb(245, 199, 48);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+        <div class="item item6"></div>
+        <div class="item item7"></div>
+        <div class="item item8"></div>
+    </div>
+</body>
+</html>
